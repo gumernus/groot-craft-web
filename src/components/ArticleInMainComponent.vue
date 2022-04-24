@@ -2,6 +2,8 @@
   <div class="article-box">
     <h3>{{ header }}</h3>
     <p>{{ text }}</p>
+    <p class="name" >Stromik_CZ</p>
+    <p class="date">Mar 1st, 2022</p>
   </div>
 </template>
 
@@ -35,8 +37,16 @@ h3 {
   color: orange;
 }
 p {
+  font-size: 23px;
   width: 80%;
 }
+.name{
+color: red;
+}
+.date{
+color: antiquewhite;
+}
+
 @media only screen and (max-width: 600px) {
   p {
     width: 100%;

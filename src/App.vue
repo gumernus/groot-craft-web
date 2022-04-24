@@ -1,5 +1,5 @@
 <template>
-<div style="padding-bottom: 110px;"></div>
+<div style="padding-bottom: 80px;"></div>
   <NavbarComponent></NavbarComponent>
 </template>
 

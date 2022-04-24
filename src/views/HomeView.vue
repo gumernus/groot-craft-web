@@ -44,7 +44,7 @@ h1{
   width: 260px;
   position: fixed;
   z-index: 1;
-  top: 150px;
+  top: 120px;
   left: 40px;
   background-color: #161616 !important;
   overflow-x: hidden;
@@ -56,7 +56,7 @@ h1{
 .sidenav a {
   padding: 5px 8px 6px 16px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 23px;
   color: white;
   display: block;
 }
