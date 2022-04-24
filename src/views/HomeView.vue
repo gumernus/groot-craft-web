@@ -1,27 +1,35 @@
 <template>
-<div style="padding-bottom: 50px;"></div>
+<div style="padding-bottom: 40px;"></div>
 
-<div class="card text-white bg-dark" style="width: 50rem;">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="card-link">Card link</a>
-    <a href="#" class="card-link">Another link</a>
-  </div>
+<div class="sidenav">
+  <a href="#about">Eventy</a>
+  <a href="#services">Soutěže</a>
+  <a href="#clients">Updaty</a>
+  <a href="#contact">Oznámení</a>
 </div>
 
+<div class="main">
+<ArticleInMainComponent headers="Novinky na serveru" texts="⚜️ Vážení členové serveru, vážená komunito. ⚜️
+Rádi bychom vás informovali o novinkách na serveru. 
+První a hlavní znatelná věc které si všimnete, je web který byl předělán a dostal nový kabát. Naleznete zde všechny potřebné informace k..."></ArticleInMainComponent><ArticleInMainComponent headers="Novinky na serveru" texts="⚜️ Vážení členové serveru, vážená komunito. ⚜️
+Rádi bychom vás informovali o novinkách na serveru. 
+První a hlavní znatelná věc které si všimnete, je web který byl předělán a dostal nový kabát. Naleznete zde všechny potřebné informace k..."></ArticleInMainComponent><ArticleInMainComponent headers="Novinky na serveru" texts="⚜️ Vážení členové serveru, vážená komunito. ⚜️
+Rádi bychom vás informovali o novinkách na serveru. 
+První a hlavní znatelná věc které si všimnete, je web který byl předělán a dostal nový kabát. Naleznete zde všechny potřebné informace k..."></ArticleInMainComponent><ArticleInMainComponent headers="Novinky na serveru" texts="⚜️ Vážení členové serveru, vážená komunito. ⚜️
+Rádi bychom vás informovali o novinkách na serveru. 
+První a hlavní znatelná věc které si všimnete, je web který byl předělán a dostal nový kabát. Naleznete zde všechny potřebné informace k..."></ArticleInMainComponent>
+</div>  
 
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import ArticleComponent from "@/components/ArticleComponent.vue"
+import ArticleInMainComponent from '@/components/ArticleInMainComponent.vue';
 
 export default defineComponent({
   name: 'HomeView',
   components: {
-    // ArticleComponent
+    ArticleInMainComponent
   },
 });
 </script>
@@ -30,17 +38,37 @@ export default defineComponent({
 h1{
   color: white;
 }
-.parent {
-  border: 1px solid black;
-  margin: 1rem;
-  padding: 2rem 2rem;
-  text-align: center;
+
+
+.sidenav {
+  width: 260px;
+  position: fixed;
+  z-index: 1;
+  top: 150px;
+  left: 40px;
+  background-color: #161616 !important;
+  overflow-x: hidden;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-bottom: 30px;
 }
-.child {
-  display: inline-block;
-  border: 1px solid red;
-  padding: 1rem 1rem;
-  vertical-align: middle;
+
+.sidenav a {
+  padding: 5px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #064579;
+}
+
+.main {
+  margin-left: 140px; /* Same width as the sidebar + left position in px */
+  font-size: 28px; /* Increased text to enable scrolling */
+  /* padding: 0px 10px; */
 }
 
 </style>

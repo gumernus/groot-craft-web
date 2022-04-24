@@ -74,11 +74,12 @@ export default defineComponent({
 <style scoped>
 .navbar {
     background-color: #161616 !important;
-    padding: 10px;
-    font-size: 17px;
+    padding: 30px;
+    font-size: 23px;
 }
 .navbar-brand{
     font-weight: bold;
+    font-size: 27px;
 }
 .navbar-light .navbar-nav .nav-link{
   color: #ffffff !important;

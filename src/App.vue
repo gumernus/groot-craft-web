@@ -1,5 +1,5 @@
 <template>
-<div style="padding-bottom: 50px;"></div>
+<div style="padding-bottom: 110px;"></div>
   <NavbarComponent></NavbarComponent>
 </template>
 
@@ -17,6 +17,9 @@ export default defineComponent({
 </script>
 
 <style>
+*{
+color: white;
+}
 a {
   color: rgb(255, 255, 255) !important;
 }

@@ -8,7 +8,7 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 export default defineComponent({
-  name: "ArticleComponent",
+  name: "ArticleInMainComponent",
   props: ["headers", "texts"],
   data() {
     return {
@@ -22,10 +22,10 @@ export default defineComponent({
 <style scoped>
 .article-box {
   color: white;
-  margin-left: 300px;
-  margin-right: 300px;
+  margin-left: 200px;
+  margin-right: 40px;
   margin-bottom: 40px;
-  padding: 30px;
+  padding: 40px;
   padding-left: 50px;
   background-color: #161616 !important;
   white-space: pre-wrap;
